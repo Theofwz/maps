@@ -1,0 +1,7 @@
+#home-index-container
+  .map
+    = render_heat_map_with_markers(@heat_maps)
+  .link-to
+    p = link_to 'cluster', clusterer_home_index_path
+    p = link_to 'bubble', bubble_home_index_path
+    p = link_to 'network', network_home_index_path

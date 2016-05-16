@@ -1,0 +1,7 @@
+#home-clusterer-container
+  #map
+    = render_cluster_map_with_markers(@clusters)
+  .link-to
+    p = link_to 'heatmap', home_index_path
+    p = link_to 'bubble', bubble_home_index_path
+    p = link_to 'network', network_home_index_path
